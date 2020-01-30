@@ -9,12 +9,14 @@ body,
   height: 100%;
   margin: 0;
   background-color: $bgColorBasic;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  color: white;
 }
 
-#app {
+.app {
   height: 100%;
-  #container {
+  .container {
+    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -34,6 +36,10 @@ body,
       button,
       input {
         border-radius: 50px;
+        margin: 5px;
+        padding: 10px 20px;
+        color: #282833;
+        border: none;
       }
       .actions {
         button {
@@ -57,7 +63,7 @@ body,
       height: calc(100% - 150px);
       margin: 10px;
       display: flex;
-      flex-direction: column-reverse;
+      flex-direction: column;
       overflow: scroll;
       .message {
         display: flex;
